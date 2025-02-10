@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send Keep Alive Request
-        run: curl -I https://pinky-beauty-bar.onrender.com
+        run: curl -I https://pinky-beauty-bar.onrender.com/ping/
