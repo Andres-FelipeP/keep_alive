@@ -1,0 +1,12 @@
+name: Keep Render Alive
+
+on:
+  schedule:
+    - cron: '*/3 * * * *'  # Corre cada 3 minutos
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Keep Alive Request
+        run: curl -I https://pinky-beauty-bar.onrender.com
