@@ -1,6 +1,7 @@
 name: Keep Render Alive
 
 on:
+  workflow_dispatch:  # 👈 Esto permite ejecutarlo manualmente
   schedule:
     - cron: '*/5 * * * *'  # Corre cada 5 minutos
 
