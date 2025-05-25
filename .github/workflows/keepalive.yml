@@ -11,3 +11,6 @@ jobs:
     steps:
       - name: Send Keep Alive Request
         run: curl -I https://pinky-beauty-bar.onrender.com/ping/
+        
+      - name: Keep Zoho-Siigo Sync Alive
+        run: curl -I https://zoho-siigo-sync.onrender.com/ping/
